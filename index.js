@@ -11,10 +11,7 @@ function getSum(a, b) {
 }
 console.log(getSum(2, 5))
 
-
-
-//#2
-
+////#2
 function kordinat(x, y) {
  let s;
 
