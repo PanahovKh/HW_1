@@ -1,27 +1,29 @@
 // #1
+
 function getSum(a, b) {
     let result = 0;
 
     if ((a % 2 ) === 0) {
        result = a * b
     } else {
-    result = a + b}
-
+    result = a + b
+}
     return result 
 }
 console.log(getSum(2, 5))
 
 ////#2
+
 function kordinat(x, y) {
  let s;
 
-if(x>0 && y>0) {
+if(x > 0 && y > 0) {
  s="точка находится в первой четверти"; }
-if(x<0 && y>0) {
+if(x < 0 && y > 0) {
  s="точка находится во второй четверти";}
-if(x<0 && y<0) {
+if(x < 0 && y < 0) {
  s="точка находится в третьей четверти";}
-if(x>0 && y<0) {
+if(x > 0 && y < 0) {
  s="точка находится в четвертой четверти";}
  
  
@@ -70,7 +72,7 @@ console.log(maxMultiple(2, 4, 6));
 function findStudent (n){
     if(0 > n <= 19) {
         result = "F";
-    } else if (20 >= n >=39) {
+    } else if (20 >= n >= 39) {
         result = "E";
     } else if (40 >= n <= 59) {
         result = "D";
@@ -205,9 +207,15 @@ function findSumOddNumbers(arr) {
 console.log(findSumOddNumbers([4, 6, 9, 3, 5, 0, 1]));
 
 //#6 
+
 function findReversArrays(arr) {
-    let revers
+    let revers = 0;
+
+    for( let i = arr.length - 1; i >= 0; i--) {
+        
+    }
 }
+console.log(findReversArrays([1, 2, 3, 4]));
 
 
 
@@ -224,3 +232,7 @@ function findQuantOddNumbers(arr) {
     return quan;
 }
 console.log(findQuantOddNumbers([4, 6, 9, 3, 5, 0, 1]));
+
+
+
+
