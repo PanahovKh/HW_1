@@ -125,3 +125,102 @@ console.log(simpleElement(9));
 //#6
 
 
+// массивы #1
+
+function findMinElement(arr) {
+    let min = arr[0];
+
+    for( let i = 1; i < arr.length; i++ ) {
+        if( arr[i] < min ) {
+            min = arr[i];
+        } 
+    }
+
+    return min;
+}
+console.log(findMinElement([4, 6, 9, 3, 0]));
+
+//#2
+
+
+function findMaxElement(arr) {
+    let max = arr[0];
+
+    for( let i = 1; i < arr.length; i++ ) {
+        if( arr[i] > max ) {
+            max = arr[i];
+        } 
+    }
+
+    return max;
+}
+console.log(findMaxElement([4, 6, 9, 3, 0]));
+
+//#3
+
+function findMinArray(arr) {
+    let min = arr[0];
+    let minIndex = 0;
+
+    for( let i = 1; i < arr.length; i++ ) {
+        if( arr[i] < min ) {
+            min = arr[i];
+            minIndex = i;
+        } 
+    }
+
+    return minIndex;
+}
+console.log(findMinArray([4, 6, 9, 3, 5, 0, 1]));
+
+//#4
+
+function findMaxArray(arr) {
+    let max = arr[0];
+    let maxIndex = 0;
+
+    for( let i = 1; i < arr.length; i++ ) {
+        if( arr[i] > max ) {
+            max = arr[i];
+            maxIndex = i;
+        } 
+    }
+
+    return maxIndex;
+}
+console.log(findMaxArray([4, 6, 9, 3, 5, 0, 1]));
+
+//#5
+
+function findSumOddNumbers(arr) {
+    let sum = 0;
+
+    for( let i = 0; i < arr.length; i++ ) {
+        if( i % 2 !== 0) {
+            sum  = sum + arr[i];
+        }
+    }
+    return sum;
+}
+console.log(findSumOddNumbers([4, 6, 9, 3, 5, 0, 1]));
+
+//#6 
+function findReversArrays(arr) {
+    let revers
+}
+
+
+
+//#7
+
+function findQuantOddNumbers(arr) {
+    let quan = 0;
+
+    for( let i = 0; i < arr.length; i++ ) {
+        if( arr[i] % 2 !== 0) {
+            quan = quan + 1;
+        }
+    }
+    return quan;
+}
+console.log(findQuantOddNumbers([4, 6, 9, 3, 5, 0, 1]));
